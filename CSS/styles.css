@@ -1,0 +1,362 @@
+@font-face {
+  font-family: OceanicCocktail;
+  src: url(/Invitaciones_cumple_Renata/CSS/OceanicCocktail.otf);
+}
+ body{
+    /* background-image: url(../images/Fondo2.jpg); */
+} 
+
+.containerC{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo{
+    display: inline-block;
+    vertical-align: top ;
+
+  }
+
+  /* Contador */
+ .cont-temporalizador{
+     display: flex;
+     justify-content: center;
+     margin-top:50px;
+ }
+
+ .cont-temporalizador .bloque{
+     margin: 0px 4px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .cont-temporalizador .bloque div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0px 0px 6px 2px #727272 inset;
+    color:#ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+ }
+
+ .cont-temporalizador .bloque p{
+     font-size: 11px;
+     font-weight: bold;
+     color: #dedede;
+ }
+
+
+ #clock {
+    font-size: 5em;
+    text-align: center;
+    margin: 1em;
+  }
+  /* Contador */
+
+  /* Contador chido */
+  .countdown {
+
+    padding: 40px;
+    
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  .countdown.style-1 div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .countdown.style-1 div span {
+    display: block;
+  }
+  .countdown div {
+    font-size: 50px;
+    font-weight: 100;
+    display: inline-block;
+  }
+  .countdown div span {
+    font-weight: 300;
+    font-family: OceanicCocktail;
+    color: rgb(239, 184, 16);
+    font-size: 30px;
+  }
+  
+  /* Contador chudo */
+
+  /* Slider */
+    
+  /* Slider */
+
+  /* Lugar */
+    .tarjetaL{
+        padding: 20px; 
+        font-family: OceanicCocktail;
+        font-size: 25px; 
+    }
+
+    .card{
+        border-radius:25px;
+        color: rgba(198,165,62,255);
+    }
+
+    #Pallcio{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #imgS{
+        padding: 20px;
+        border-radius:35px;
+    }
+
+    #i{
+        display:block;
+        margin:auto;
+    }
+
+    #Textfotos{
+        text-align:center;
+        font-family: OceanicCocktail;
+        font-size: 60px;
+    }
+    
+  /* Lugar */
+
+  /* Mi familia */
+
+    #cardP{
+        text-align:center;
+    }
+
+   #Fotito {
+    width:300px;
+    height:300px;
+    border-radius:160px;
+    border:5px solid rgb(0, 0, 0);
+    display:block;
+    margin:auto;
+    }
+
+  /* Mi familia */
+
+  /* Formulario */
+
+  .formulario{
+	width: 360px;
+	background: #f1f1f1;
+	height: 580px;
+	padding: 80px 40px;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	transform: translate(-50%, -50%);
+	box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 350px;
+    margin-bottom: 400px;
+}
+
+.formulario h1{
+	text-align: center;   
+	margin-bottom: 30px;
+	color: #333;
+	font-weight: 600;
+}
+
+.box-input{
+	border-bottom: 2px solid #adadad;
+	position: relative;
+	margin: 30px 0;
+}
+
+.box-input input{
+	font-size: 16px;
+	color: #333;
+	border: none;
+	width: 100%;
+	outline: none;
+	background: none;
+	padding: 0 5px;
+	height: 40px;
+}
+
+.box-input span::before{
+	content: attr(data-placeholder);
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+	z-index: -1;
+	transition: .5s;
+}
+
+.box-input span::after{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background: linear-gradient(120deg, #3498db, #8e44ad);
+	transition: .5s;
+}
+
+.focus + span::before{
+	top: -5px;
+}
+
+.focus + span::after{
+	width: 100%;
+}
+
+.boton{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: #48bb78;
+	border: solid 2px #48bb78;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 18px;
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.boton:hover{
+	background-color: #2F855A;
+	border: solid 2px #2F855A;
+	transition: .5s;
+}
+
+#imgtt{
+   
+    width: 80px;
+    height: 80px;
+}
+
+  /* Formulario */
+
+
+  /* Tarjetas de Habrá */
+  .cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .cardE {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .cardE .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .cardE .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .cardE .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .cardE:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  
+  
+  /*
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+  */
+  /* Tarjetas de Habrá */
+
+
+  /* Audio */
+  .box-audio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    /* min-width: 50px; */
+    height: 50px;
+  }
+  
+  audio {
+   /*  border: 2px solid #4bb107;
+    border-radius: 5px;
+    /* pour avoir le lecteur en entier activer la width 400 ci-dessous */
+    /* width: 400px; */
+    width: 130px; 
+  }
+  
+  .containerAU {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  /* effect focus */
+  
+
+  
+ 
+  /* Audio */
